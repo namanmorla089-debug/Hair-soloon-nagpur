@@ -1,0 +1,1001 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Habibs Hair & Beauty Salon in Dharampeth Nagpur | Premium Hair & Beauty Care</title>
+<meta name="description" content="Habibs Hair & Beauty Salon in Dharampeth, Nagpur. Professional hair spa, beard trim, hair colour, hair transformation, hair smoothing & hair botox treatment. Call 096730 60660." />
+<meta name="keywords" content="Hair Salon in Dharampeth Nagpur, Habibs Hair Salon, Beauty Salon Nagpur, Hair Spa Nagpur, Hair Colour Dharampeth" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  :root{
+    --gold:#c9a961;
+    --gold-light:#e6c98a;
+    --gold-dark:#a8894a;
+    --red:#8b1e2b;
+    --black:#0a0a0a;
+    --soft-black:#141414;
+    --cream:#faf7f2;
+  }
+  *{ -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+  html{ scroll-behavior:smooth; }
+  body{
+    font-family:'Inter', sans-serif;
+    background:#fff;
+    color:#111;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,h4,.serif{ font-family:'Playfair Display', serif; letter-spacing:.2px; }
+
+  /* Navbar */
+  .nav-wrap{
+    background:rgba(10,10,10,.85);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border-bottom:1px solid rgba(201,169,97,.15);
+  }
+  .logo-text{
+    font-family:'Playfair Display', serif;
+    font-weight:700;
+    letter-spacing:1px;
+  }
+  .logo-text span{ color:var(--gold); }
+  .nav-link{
+    position:relative;
+    color:#e9e9e9;
+    font-weight:500;
+    font-size:14px;
+    letter-spacing:.5px;
+    transition:color .3s;
+  }
+  .nav-link:hover{ color:var(--gold); }
+  .nav-link::after{
+    content:'';
+    position:absolute;
+    left:0; bottom:-6px;
+    width:0; height:1px;
+    background:var(--gold);
+    transition:width .3s;
+  }
+  .nav-link:hover::after{ width:100%; }
+
+  .btn-gold{
+    background:linear-gradient(135deg,var(--gold),var(--gold-dark));
+    color:#0a0a0a;
+    font-weight:600;
+    letter-spacing:.5px;
+    padding:12px 26px;
+    border-radius:2px;
+    transition:all .3s;
+    box-shadow:0 6px 20px rgba(201,169,97,.25);
+    display:inline-flex; align-items:center; gap:8px;
+  }
+  .btn-gold:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 28px rgba(201,169,97,.4);
+    background:linear-gradient(135deg,var(--gold-light),var(--gold));
+  }
+  .btn-outline{
+    border:1px solid rgba(255,255,255,.3);
+    color:#fff;
+    padding:12px 26px;
+    border-radius:2px;
+    font-weight:500;
+    letter-spacing:.5px;
+    transition:all .3s;
+    display:inline-flex; align-items:center; gap:8px;
+  }
+  .btn-outline:hover{
+    border-color:var(--gold);
+    color:var(--gold);
+    background:rgba(201,169,97,.05);
+  }
+
+  /* Hero */
+  .hero{
+    position:relative;
+    min-height:100vh;
+    background:
+      linear-gradient(180deg, rgba(10,10,10,.55) 0%, rgba(10,10,10,.75) 60%, rgba(10,10,10,.95) 100%),
+      url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+    display:flex; align-items:center;
+  }
+  .hero::before{
+    content:'';
+    position:absolute; inset:0;
+    background:radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,.4) 100%);
+    pointer-events:none;
+  }
+  .hero-badge{
+    display:inline-flex; align-items:center; gap:10px;
+    padding:8px 18px;
+    border:1px solid rgba(201,169,97,.4);
+    border-radius:100px;
+    color:var(--gold);
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    background:rgba(201,169,97,.06);
+  }
+  .hero h1{
+    font-size:clamp(2.2rem, 5.5vw, 4.5rem);
+    line-height:1.1;
+    font-weight:600;
+    color:#fff;
+  }
+  .hero h1 em{
+    font-style:italic;
+    color:var(--gold);
+    font-weight:500;
+  }
+  .divider-line{
+    width:60px; height:1px;
+    background:var(--gold);
+    display:inline-block;
+    margin:0 14px;
+    vertical-align:middle;
+  }
+
+  /* Section styling */
+  .section-title{
+    font-size:clamp(1.8rem, 3.5vw, 2.8rem);
+    font-weight:600;
+    color:#0a0a0a;
+  }
+  .section-title.light{ color:#fff; }
+  .eyebrow{
+    color:var(--gold);
+    font-size:12px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-weight:600;
+  }
+
+  /* Trust */
+  .trust-card{
+    background:#fff;
+    border:1px solid #eee;
+    padding:30px 24px;
+    text-align:center;
+    transition:all .4s;
+    position:relative;
+    overflow:hidden;
+  }
+  .trust-card::before{
+    content:'';
+    position:absolute;
+    top:0; left:0; right:0;
+    height:2px;
+    background:linear-gradient(90deg, transparent, var(--gold), transparent);
+    transform:translateX(-100%);
+    transition:transform .6s;
+  }
+  .trust-card:hover::before{ transform:translateX(0); }
+  .trust-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 20px 40px rgba(0,0,0,.06);
+    border-color:rgba(201,169,97,.3);
+  }
+
+  /* Services */
+  .services-section{
+    background:linear-gradient(180deg,#faf7f2 0%, #fff 100%);
+  }
+  .service-card{
+    background:#fff;
+    border:1px solid #eee;
+    padding:36px 28px;
+    transition:all .4s cubic-bezier(.2,.8,.2,1);
+    position:relative;
+    overflow:hidden;
+    height:100%;
+  }
+  .service-card::after{
+    content:'';
+    position:absolute;
+    left:0; bottom:0;
+    width:100%; height:3px;
+    background:linear-gradient(90deg,var(--gold),var(--red));
+    transform:scaleX(0);
+    transform-origin:left;
+    transition:transform .5s;
+  }
+  .service-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 30px 60px rgba(0,0,0,.08);
+    border-color:rgba(201,169,97,.4);
+  }
+  .service-card:hover::after{ transform:scaleX(1); }
+  .service-icon{
+    width:56px; height:56px;
+    display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(135deg, rgba(201,169,97,.15), rgba(201,169,97,.05));
+    border:1px solid rgba(201,169,97,.25);
+    color:var(--gold-dark);
+    font-size:22px;
+    margin-bottom:22px;
+    transition:all .4s;
+  }
+  .service-card:hover .service-icon{
+    background:linear-gradient(135deg,var(--gold),var(--gold-dark));
+    color:#fff;
+    transform:rotate(-5deg) scale(1.05);
+  }
+
+  /* About */
+  .about-img-wrap{
+    position:relative;
+    overflow:hidden;
+  }
+  .about-img-wrap img{
+    transition:transform .8s;
+  }
+  .about-img-wrap:hover img{ transform:scale(1.05); }
+  .about-accent{
+    position:absolute;
+    width:120px; height:120px;
+    border:2px solid var(--gold);
+    top:-20px; left:-20px;
+    z-index:-1;
+  }
+
+  /* Gallery */
+  .gallery-item{
+    position:relative;
+    overflow:hidden;
+    aspect-ratio:1/1;
+    cursor:pointer;
+  }
+  .gallery-item img{
+    width:100%; height:100%;
+    object-fit:cover;
+    transition:transform .7s cubic-bezier(.2,.8,.2,1), filter .5s;
+  }
+  .gallery-item::after{
+    content:'';
+    position:absolute; inset:0;
+    background:linear-gradient(180deg, transparent 40%, rgba(10,10,10,.7) 100%);
+    opacity:0;
+    transition:opacity .4s;
+  }
+  .gallery-item .overlay{
+    position:absolute;
+    bottom:20px; left:20px;
+    color:#fff;
+    z-index:2;
+    opacity:0;
+    transform:translateY(10px);
+    transition:all .4s;
+  }
+  .gallery-item:hover img{ transform:scale(1.1); filter:brightness(.85); }
+  .gallery-item:hover::after{ opacity:1; }
+  .gallery-item:hover .overlay{ opacity:1; transform:translateY(0); }
+
+  /* Reviews */
+  .reviews-section{
+    background:
+      linear-gradient(180deg, rgba(10,10,10,.92), rgba(10,10,10,.97)),
+      url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1920&q=80') center/cover fixed;
+  }
+  .review-card{
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(201,169,97,.15);
+    padding:32px 28px;
+    transition:all .4s;
+    height:100%;
+  }
+  .review-card:hover{
+    border-color:rgba(201,169,97,.4);
+    background:rgba(201,169,97,.04);
+    transform:translateY(-4px);
+  }
+  .stars{ color:var(--gold); }
+
+  /* Location */
+  .location-section{
+    background:#faf7f2;
+  }
+  .map-frame{
+    border:1px solid rgba(201,169,97,.2);
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+  }
+
+  /* Contact */
+  .contact-section{
+    background:
+      linear-gradient(135deg, rgba(10,10,10,.95), rgba(20,20,20,.95)),
+      url('https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1920&q=80') center/cover;
+  }
+
+  /* Footer */
+  footer{
+    background:#060606;
+    color:#aaa;
+    border-top:1px solid rgba(201,169,97,.15);
+  }
+  footer a:hover{ color:var(--gold); }
+
+  /* Animations */
+  .fade-up{
+    opacity:0;
+    transform:translateY(30px);
+    transition:opacity .8s, transform .8s;
+  }
+  .fade-up.visible{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+  /* Mobile menu */
+  .mobile-menu{
+    position:fixed;
+    top:0; right:-100%;
+    width:80%; max-width:340px;
+    height:100vh;
+    background:#0a0a0a;
+    z-index:100;
+    transition:right .4s cubic-bezier(.2,.8,.2,1);
+    padding:80px 30px 30px;
+    border-left:1px solid rgba(201,169,97,.2);
+  }
+  .mobile-menu.open{ right:0; }
+  .mobile-menu a{
+    display:block;
+    color:#eee;
+    padding:14px 0;
+    border-bottom:1px solid rgba(255,255,255,.05);
+    font-size:15px;
+    letter-spacing:1px;
+  }
+  .mobile-menu a:hover{ color:var(--gold); }
+  .menu-overlay{
+    position:fixed; inset:0;
+    background:rgba(0,0,0,.6);
+    z-index:99;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .3s;
+  }
+  .menu-overlay.open{ opacity:1; pointer-events:auto; }
+
+  /* Floating call */
+  .float-call{
+    position:fixed;
+    bottom:24px; right:24px;
+    width:58px; height:58px;
+    background:linear-gradient(135deg,var(--gold),var(--gold-dark));
+    color:#0a0a0a;
+    border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    font-size:22px;
+    box-shadow:0 10px 30px rgba(201,169,97,.4);
+    z-index:50;
+    animation:pulse 2s infinite;
+  }
+  @keyframes pulse{
+    0%,100%{ box-shadow:0 10px 30px rgba(201,169,97,.4); }
+    50%{ box-shadow:0 10px 40px rgba(201,169,97,.7); }
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar{ width:8px; }
+  ::-webkit-scrollbar-track{ background:#0a0a0a; }
+  ::-webkit-scrollbar-thumb{ background:var(--gold-dark); border-radius:4px; }
+
+  /* Lightbox */
+  .lightbox{
+    position:fixed; inset:0;
+    background:rgba(0,0,0,.95);
+    z-index:200;
+    display:none;
+    align-items:center; justify-content:center;
+    padding:20px;
+  }
+  .lightbox.open{ display:flex; }
+  .lightbox img{ max-width:95%; max-height:90vh; object-fit:contain; }
+  .lightbox-close{
+    position:absolute; top:20px; right:24px;
+    color:#fff; font-size:32px;
+    cursor:pointer;
+  }
+
+  @media (max-width:768px){
+    .hero{ min-height:90vh; }
+    .float-call{ bottom:16px; right:16px; width:52px; height:52px; font-size:20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="nav-wrap fixed top-0 left-0 right-0 z-50">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 py-4 flex items-center justify-between">
+    <a href="#home" class="flex items-center gap-2">
+      <div class="w-10 h-10 border border-[color:var(--gold)] flex items-center justify-center">
+        <span class="logo-text text-lg"><span>H</span></span>
+      </div>
+      <div class="logo-text text-white text-sm sm:text-base">
+        Habib's <span>Hair & Beauty</span>
+      </div>
+    </a>
+
+    <div class="hidden lg:flex items-center gap-8">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#reviews" class="nav-link">Reviews</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+
+    <div class="hidden lg:block">
+      <a href="tel:09673060660" class="btn-gold">
+        <i class="fa-solid fa-calendar-check"></i> Book Appointment
+      </a>
+    </div>
+
+    <button id="menuBtn" class="lg:hidden text-white text-2xl" aria-label="Menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="menuOverlay" class="menu-overlay"></div>
+<div id="mobileMenu" class="mobile-menu">
+  <button id="closeMenu" class="absolute top-6 right-6 text-white text-2xl"><i class="fa-solid fa-xmark"></i></button>
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#about">About</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#contact">Contact</a>
+  <a href="tel:09673060660" class="btn-gold mt-8 justify-center">Book Appointment</a>
+</div>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative z-10 pt-24 pb-16 w-full">
+    <div class="max-w-3xl">
+      <div class="hero-badge mb-8 fade-up">
+        <span class="w-2 h-2 bg-[color:var(--gold)] rounded-full"></span>
+        Hair Salon in Dharampeth, Nagpur
+      </div>
+      <h1 class="fade-up">
+        Premium Hair & <em>Beauty Care</em>
+        <br>in Dharampeth, <em>Nagpur</em>
+      </h1>
+      <div class="mt-6 flex items-center text-gray-300 text-sm sm:text-base fade-up">
+        <span class="divider-line"></span>
+        <span>Professional salon services in a modern and welcoming environment.</span>
+      </div>
+
+      <div class="mt-10 flex flex-wrap gap-4 fade-up">
+        <a href="tel:09673060660" class="btn-gold">
+          <i class="fa-solid fa-calendar-check"></i> Book Appointment
+        </a>
+        <a href="tel:09673060660" class="btn-outline">
+          <i class="fa-solid fa-phone"></i> Call Now
+        </a>
+      </div>
+
+      <div class="mt-14 flex flex-wrap items-center gap-8 text-white/80 text-sm fade-up">
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-clock text-[color:var(--gold)]"></i>
+          <span>Open — Closes 10 pm</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-location-dot text-[color:var(--gold)]"></i>
+          <span>Dharampeth, Nagpur</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 text-xs tracking-[3px] uppercase hidden md:block">
+    <div class="flex flex-col items-center gap-2">
+      <span>Scroll</span>
+      <div class="w-px h-10 bg-[color:var(--gold)] animate-pulse"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<section class="py-16 md:py-20 bg-white border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-5 lg:px-8">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-8">
+      <div class="trust-card fade-up">
+        <div class="text-4xl md:text-5xl font-bold text-[color:var(--gold-dark)] serif">4.8</div>
+        <div class="stars mt-2 text-lg">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="mt-3 text-xs uppercase tracking-widest text-gray-500">Google Rating</div>
+      </div>
+      <div class="trust-card fade-up">
+        <div class="text-4xl md:text-5xl font-bold text-[color:var(--gold-dark)] serif">1,362</div>
+        <div class="mt-3 text-xs uppercase tracking-widest text-gray-500">Customer Reviews</div>
+      </div>
+      <div class="trust-card fade-up">
+        <div class="text-4xl md:text-5xl font-bold text-[color:var(--gold-dark)] serif serif">
+          <i class="fa-solid fa-award text-3xl"></i>
+        </div>
+        <div class="mt-3 text-xs uppercase tracking-widest text-gray-500">Trusted Salon</div>
+      </div>
+      <div class="trust-card fade-up">
+        <div class="text-4xl md:text-5xl font-bold text-[color:var(--gold-dark)] serif">
+          <i class="fa-solid fa-user-group text-3xl"></i>
+        </div>
+        <div class="mt-3 text-xs uppercase tracking-widest text-gray-500">Expert Stylists</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services-section py-20 md:py-28">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16 fade-up">
+      <div class="eyebrow mb-4">Our Services</div>
+      <h2 class="section-title">Crafted for Your <em style="color:var(--gold-dark);font-style:italic;">Best Look</em></h2>
+      <p class="mt-5 text-gray-600 leading-relaxed">
+        Explore our range of professional hair and beauty services designed to refresh your style and enhance your confidence.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fa-solid fa-spa"></i></div>
+        <h3 class="text-xl font-semibold mb-3">Hair Spa</h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-5">Deep nourishing treatment to rejuvenate hair and scalp, leaving your hair soft, smooth and healthy.</p>
+        <div class="pt-4 border-t border-gray-100 text-xs text-gray-500 uppercase tracking-wider">Contact salon for pricing</div>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fa-solid fa-scissors"></i></div>
+        <h3 class="text-xl font-semibold mb-3">Beard Trim</h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-5">Precision beard shaping and grooming for a sharp, clean and well-defined look.</p>
+        <div class="pt-4 border-t border-gray-100 text-xs text-gray-500 uppercase tracking-wider">Contact salon for pricing</div>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+        <h3 class="text-xl font-semibold mb-3">Hair Colour</h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-5">Professional hair colouring with premium products for vibrant, long-lasting and natural-looking results.</p>
+        <div class="pt-4 border-t border-gray-100 text-xs text-gray-500 uppercase tracking-wider">Contact salon for pricing</div>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        <h3 class="text-xl font-semibold mb-3">Hair Transformation</h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-5">Complete hair makeovers tailored to your style — from cuts to styling, crafted by skilled professionals.</p>
+        <div class="pt-4 border-t border-gray-100 text-xs text-gray-500 uppercase tracking-wider">Contact salon for pricing</div>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fa-solid fa-droplet"></i></div>
+        <h3 class="text-xl font-semibold mb-3">Hair Smoothing</h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-5">Frizz-free, sleek and manageable hair with long-lasting smoothing treatments.</p>
+        <div class="pt-4 border-t border-gray-100 text-xs text-gray-500 uppercase tracking-wider">Contact salon for pricing</div>
+      </div>
+
+      <div class="service-card fade-up">
+        <div class="service-icon"><i class="fa-solid fa-flask"></i></div>
+        <h3 class="text-xl font-semibold mb-3">Hair Botox Treatment</h3>
+        <p class="text-gray-600 text-sm leading-relaxed mb-5">Advanced deep-conditioning treatment that restores shine, smoothness and strength to damaged hair.</p>
+        <div class="pt-4 border-t border-gray-100 text-xs text-gray-500 uppercase tracking-wider">Contact salon for pricing</div>
+      </div>
+    </div>
+
+    <div class="text-center mt-14 fade-up">
+      <a href="tel:09673060660" class="btn-gold">
+        <i class="fa-solid fa-phone"></i> Enquire About Services
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 md:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div class="about-img-wrap fade-up relative">
+        <div class="about-accent"></div>
+        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=80" alt="Habibs Hair & Beauty Salon Interior" class="w-full h-[500px] object-cover">
+      </div>
+      <div class="fade-up">
+        <div class="eyebrow mb-4">About Us</div>
+        <h2 class="section-title">A Professional Hair & Beauty Salon in <em style="color:var(--gold-dark);font-style:italic;">Dharampeth</em></h2>
+        <p class="mt-6 text-gray-600 leading-relaxed">
+          Habibs Hair & Beauty Salon is a professional hair and beauty salon located in Dharampeth, Nagpur. We offer a wide range of hair care, styling and grooming services in a modern and welcoming environment.
+        </p>
+        <p class="mt-4 text-gray-600 leading-relaxed">
+          Our focus is on delivering quality service with attention to detail — helping every client leave feeling confident and well-groomed.
+        </p>
+
+        <div class="mt-8 grid grid-cols-2 gap-5">
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-check text-[color:var(--gold-dark)] mt-1"></i>
+            <div>
+              <div class="font-semibold text-sm">Professional Service</div>
+              <div class="text-xs text-gray-500 mt-1">Skilled & experienced stylists</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-check text-[color:var(--gold-dark)] mt-1"></i>
+            <div>
+              <div class="font-semibold text-sm">Modern Environment</div>
+              <div class="text-xs text-gray-500 mt-1">Clean & welcoming space</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-check text-[color:var(--gold-dark)] mt-1"></i>
+            <div>
+              <div class="font-semibold text-sm">Quality Products</div>
+              <div class="text-xs text-gray-500 mt-1">Trusted hair care brands</div>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-check text-[color:var(--gold-dark)] mt-1"></i>
+            <div>
+              <div class="font-semibold text-sm">Customer Focused</div>
+              <div class="text-xs text-gray-500 mt-1">Personalised attention</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <a href="tel:09673060660" class="btn-gold">
+            <i class="fa-solid fa-calendar-check"></i> Book Your Visit
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="py-20 md:py-28 bg-[color:var(--soft-black)]">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14 fade-up">
+      <div class="eyebrow mb-4">Gallery</div>
+      <h2 class="section-title light">A Glimpse of <em style="color:var(--gold);font-style:italic;">Our Salon</em></h2>
+      <p class="mt-5 text-gray-400 leading-relaxed">
+        Take a look inside Habibs Hair & Beauty Salon — our space, our work, and the experience we create for every client.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+      <div class="gallery-item fade-up" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=600&q=80" alt="Salon Interior">
+        <div class="overlay">
+          <div class="text-xs uppercase tracking-widest text-[color:var(--gold)]">Interior</div>
+          <div class="serif text-lg">Our Space</div>
+        </div>
+      </div>
+      <div class="gallery-item fade-up" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Hair Styling">
+        <div class="overlay">
+          <div class="text-xs uppercase tracking-widest text-[color:var(--gold)]">Styling</div>
+          <div class="serif text-lg">Hair Care</div>
+        </div>
+      </div>
+      <div class="gallery-item fade-up" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80" alt="Salon Setup">
+        <div class="overlay">
+          <div class="text-xs uppercase tracking-widest text-[color:var(--gold)]">Setup</div>
+          <div class="serif text-lg">Modern Studio</div>
+        </div>
+      </div>
+      <div class="gallery-item fade-up" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=600&q=80" alt="Hair Colour">
+        <div class="overlay">
+          <div class="text-xs uppercase tracking-widest text-[color:var(--gold)]">Colour</div>
+          <div class="serif text-lg">Hair Colour</div>
+        </div>
+      </div>
+      <div class="gallery-item fade-up" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=600&q=80" alt="Hair Treatment">
+        <div class="overlay">
+          <div class="text-xs uppercase tracking-widest text-[color:var(--gold)]">Treatment</div>
+          <div class="serif text-lg">Hair Spa</div>
+        </div>
+      </div>
+      <div class="gallery-item fade-up" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?auto=format&fit=crop&w=600&q=80" alt="Beauty Care">
+        <div class="overlay">
+          <div class="text-xs uppercase tracking-widest text-[color:var(--gold)]">Beauty</div>
+          <div class="serif text-lg">Beauty Care</div>
+        </div>
+      </div>
+      <div class="gallery-item fade-up" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=600&q=80" alt="Styling Tools">
+        <div class="overlay">
+          <div class="text-xs uppercase tracking-widest text-[color:var(--gold)]">Tools</div>
+          <div class="serif text-lg">Professional</div>
+        </div>
+      </div>
+      <div class="gallery-item fade-up" onclick="openLightbox(this)">
+        <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=600&q=80" alt="Hair Cut">
+        <div class="overlay">
+          <div class="text-xs uppercase tracking-widest text-[color:var(--gold)]">Cut</div>
+          <div class="serif text-lg">Precision Cut</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close"><i class="fa-solid fa-xmark"></i></span>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<!-- REVIEWS -->
+<section id="reviews" class="reviews-section py-20 md:py-28">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14 fade-up">
+      <div class="eyebrow mb-4">Reviews</div>
+      <h2 class="section-title light">What Our <em style="color:var(--gold);font-style:italic;">Clients Say</em></h2>
+      <p class="mt-5 text-gray-400 leading-relaxed">
+        Based on our Google rating from real customer reviews.
+      </p>
+    </div>
+
+    <!-- Rating summary -->
+    <div class="max-w-3xl mx-auto mb-14 fade-up">
+      <div class="bg-white/5 border border-[color:var(--gold)]/30 p-8 md:p-10 text-center">
+        <div class="flex items-center justify-center gap-6 flex-wrap">
+          <div>
+            <div class="text-6xl md:text-7xl font-bold text-[color:var(--gold)] serif">4.8</div>
+            <div class="stars text-xl mt-2">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <div class="h-20 w-px bg-white/10 hidden md:block"></div>
+          <div class="text-left">
+            <div class="text-white text-lg font-semibold">Google Rating</div>
+            <div class="text-gray-400 text-sm mt-1">Based on <span class="text-[color:var(--gold)] font-semibold">1,362 reviews</span></div>
+            <div class="text-gray-500 text-xs mt-2 uppercase tracking-widest">Verified on Google</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Popular review topics -->
+    <div class="text-center mb-10 fade-up">
+      <div class="text-xs uppercase tracking-[3px] text-gray-500 mb-5">Popular Review Topics</div>
+      <div class="flex flex-wrap justify-center gap-3">
+        <span class="px-4 py-2 border border-white/10 text-gray-300 text-sm rounded-full">Hair Spa</span>
+        <span class="px-4 py-2 border border-white/10 text-gray-300 text-sm rounded-full">Beard Trim</span>
+        <span class="px-4 py-2 border border-white/10 text-gray-300 text-sm rounded-full">Hair Colour</span>
+        <span class="px-4 py-2 border border-white/10 text-gray-300 text-sm rounded-full">Hair Transformation</span>
+        <span class="px-4 py-2 border border-white/10 text-gray-300 text-sm rounded-full">Hair Smoothing</span>
+        <span class="px-4 py-2 border border-white/10 text-gray-300 text-sm rounded-full">Hair Botox Treatment</span>
+      </div>
+    </div>
+
+    <div class="text-center fade-up">
+      <a href="https://www.google.com/search?q=Habibs+Hair+%26+Beauty+Salon+Dharampeth+Nagpur" target="_blank" rel="noopener" class="btn-gold">
+        <i class="fa-brands fa-google"></i> Read All 1,362 Reviews on Google
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location" class="location-section py-20 md:py-28">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="fade-up">
+        <div class="eyebrow mb-4">Visit Us</div>
+        <h2 class="section-title">Find Our <em style="color:var(--gold-dark);font-style:italic;">Salon</em></h2>
+        <p class="mt-5 text-gray-600 leading-relaxed">
+          Conveniently located in Dharampeth, Nagpur. Walk in or call ahead to book your appointment.
+        </p>
+
+        <div class="mt-8 space-y-5">
+          <div class="flex items-start gap-4">
+            <div class="w-11 h-11 flex items-center justify-center bg-[color:var(--gold)]/10 border border-[color:var(--gold)]/30 text-[color:var(--gold-dark)] flex-shrink-0">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <div class="text-xs uppercase tracking-widest text-gray-500 mb-1">Address</div>
+              <div class="text-gray-800 leading-relaxed">
+                Plot no,02,G-3,4, Shiv-Gaurav Estate, opposite Taori Marketing, Bhagwaghar Layout, Nagpur, Maharashtra 440010
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-11 h-11 flex items-center justify-center bg-[color:var(--gold)]/10 border border-[color:var(--gold)]/30 text-[color:var(--gold-dark)] flex-shrink-0">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <div class="text-xs uppercase tracking-widest text-gray-500 mb-1">Phone</div>
+              <a href="tel:09673060660" class="text-gray-800 hover:text-[color:var(--gold-dark)] transition">096730 60660</a>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-11 h-11 flex items-center justify-center bg-[color:var(--gold)]/10 border border-[color:var(--gold)]/30 text-[color:var(--gold-dark)] flex-shrink-0">
+              <i class="fa-solid fa-clock"></i>
+            </div>
+            <div>
+              <div class="text-xs uppercase tracking-widest text-gray-500 mb-1">Hours</div>
+              <div class="text-gray-800">Open — Closes 10 pm</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Habibs+Hair+%26+Beauty+Salon+Dharampeth+Nagpur" target="_blank" rel="noopener" class="btn-gold">
+            <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+          </a>
+          <a href="tel:09673060660" class="btn-outline" style="border-color:rgba(0,0,0,.2);color:#0a0a0a;">
+            <i class="fa-solid fa-phone"></i> Call Now
+          </a>
+        </div>
+      </div>
+
+      <div class="map-frame fade-up">
+        <iframe
+          src="https://www.google.com/maps?q=Habibs+Hair+%26+Beauty+Salon+Dharampeth+Nagpur&output=embed"
+          width="100%" height="450" style="border:0; display:block;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section py-20 md:py-28">
+  <div class="max-w-5xl mx-auto px-5 lg:px-8 text-center relative z-10">
+    <div class="fade-up">
+      <div class="eyebrow mb-4">Book Appointment</div>
+      <h2 class="section-title light">Ready for Your <em style="color:var(--gold);font-style:italic;">New Look?</em></h2>
+      <p class="mt-5 text-gray-300 max-w-2xl mx-auto leading-relaxed">
+        Call us to book your appointment at Habibs Hair & Beauty Salon in Dharampeth, Nagpur. We look forward to welcoming you.
+      </p>
+
+      <div class="mt-10 inline-block bg-white/5 border border-[color:var(--gold)]/30 p-8 md:p-10">
+        <div class="text-xs uppercase tracking-[4px] text-[color:var(--gold)] mb-3">Habibs Hair & Beauty Salon</div>
+        <div class="text-white/70 text-sm mb-6">in Dharampeth Nagpur</div>
+        <a href="tel:09673060660" class="text-3xl md:text-4xl text-white serif font-semibold hover:text-[color:var(--gold)] transition">
+          096730 60660
+        </a>
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a href="tel:09673060660" class="btn-gold">
+            <i class="fa-solid fa-phone"></i> Call Now
+          </a>
+          <a href="tel:09673060660" class="btn-outline">
+            <i class="fa-solid fa-calendar-check"></i> Book Appointment
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="grid md:grid-cols-3 gap-10 pb-12 border-b border-white/10">
+      <div>
+        <div class="flex items-center gap-2 mb-5">
+          <div class="w-10 h-10 border border-[color:var(--gold)] flex items-center justify-center">
+            <span class="logo-text text-lg"><span>H</span></span>
+          </div>
+          <div class="logo-text text-white">Habib's <span style="color:var(--gold);">Hair & Beauty</span></div>
+        </div>
+        <p class="text-sm text-gray-400 leading-relaxed">
+          Habibs Hair & Beauty Salon in Dharampeth Nagpur — professional hair and beauty services in a modern, welcoming environment.
+        </p>
+      </div>
+
+      <div>
+        <div class="text-white text-sm uppercase tracking-widest mb-5">Contact</div>
+        <div class="space-y-3 text-sm">
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-location-dot text-[color:var(--gold)] mt-1 flex-shrink-0"></i>
+            <span class="text-gray-400 leading-relaxed">Plot no,02,G-3,4, Shiv-Gaurav Estate, opposite Taori Marketing, Bhagwaghar Layout, Nagpur, Maharashtra 440010</span>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-phone text-[color:var(--gold)]"></i>
+            <a href="tel:09673060660" class="text-gray-400 hover:text-[color:var(--gold)]">096730 60660</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-clock text-[color:var(--gold)]"></i>
+            <span class="text-gray-400">Open — Closes 10 pm</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="text-white text-sm uppercase tracking-widest mb-5">Quick Links</div>
+        <div class="space-y-3 text-sm">
+          <a href="#services" class="block text-gray-400 hover:text-[color:var(--gold)]">Services</a>
+          <a href="#about" class="block text-gray-400 hover:text-[color:var(--gold)]">About</a>
+          <a href="#gallery" class="block text-gray-400 hover:text-[color:var(--gold)]">Gallery</a>
+          <a href="#reviews" class="block text-gray-400 hover:text-[color:var(--gold)]">Reviews</a>
+          <a href="#contact" class="block text-gray-400 hover:text-[color:var(--gold)]">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+      <div>© <span id="year"></span> Habibs Hair & Beauty Salon in Dharampeth Nagpur. All rights reserved.</div>
+      <div>Hair Salon in Dharampeth, Nagpur</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating call button -->
+<a href="tel:09673060660" class="float-call" aria-label="Call Now">
+  <i class="fa-solid fa-phone"></i>
+</a>
+
+<script>
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile menu
+  const menuBtn = document.getElementById('menuBtn');
+  const closeMenu = document.getElementById('closeMenu');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuOverlay = document.getElementById('menuOverlay');
+
+  function openMenu(){ mobileMenu.classList.add('open'); menuOverlay.classList.add('open'); }
+  function closeMenuFn(){ mobileMenu.classList.remove('open'); menuOverlay.classList.remove('open'); }
+  menuBtn.addEventListener('click', openMenu);
+  closeMenu.addEventListener('click', closeMenuFn);
+  menuOverlay.addEventListener('click', closeMenuFn);
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenuFn));
+
+  // Scroll fade-in
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold:0.12 });
+  document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+
+  // Navbar background on scroll
+  const nav = document.querySelector('.nav-wrap');
+  window.addEventListener('scroll', ()=>{
+    if(window.scrollY > 50){
+      nav.style.background = 'rgba(10,10,10,.97)';
+    } else {
+      nav.style.background = 'rgba(10,10,10,.85)';
+    }
+  });
+
+  // Lightbox
+  function openLightbox(el){
+    const img = el.querySelector('img');
+    document.getElementById('lightboxImg').src = img.src;
+    document.getElementById('lightbox').classList.add('open');
+  }
+  function closeLightbox(){
+    document.getElementById('lightbox').classList.remove('open');
+  }
+</script>
+
+</body>
+</html>
